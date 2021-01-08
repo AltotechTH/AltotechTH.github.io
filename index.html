@@ -21,6 +21,105 @@
     <link rel="stylesheet" href="assets/theme/css/style.css" />
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css" />
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css" />
+    <style>
+      .slick-slide {
+        margin: 0px 20px;
+      }
+
+      .slick-slide img {
+        width: 100%;
+      }
+
+      .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      .slick-list:focus {
+        outline: none;
+      }
+      .slick-list.dragging {
+        cursor: pointer;
+        cursor: hand;
+      }
+
+      .slick-slider .slick-track,
+      .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+
+      .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+      }
+      .slick-track:before,
+      .slick-track:after {
+        display: table;
+        content: '';
+      }
+      .slick-track:after {
+        clear: both;
+      }
+      .slick-loading .slick-track {
+        visibility: hidden;
+      }
+
+      .slick-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+      }
+      [dir='rtl'] .slick-slide {
+        float: right;
+      }
+      .slick-slide img {
+        display: block;
+      }
+      .slick-slide.slick-loading img {
+        display: none;
+      }
+      .slick-slide.dragging img {
+        pointer-events: none;
+      }
+      .slick-initialized .slick-slide {
+        display: block;
+      }
+      .slick-loading .slick-slide {
+        visibility: hidden;
+      }
+      .slick-vertical .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+      }
+      .slick-arrow.slick-hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <section class="menu menu2 cid-sit2Ncr4Ra" once="menu" id="menu2-o">
@@ -32,7 +131,7 @@
                 <img
                   src="assets/images/logoaltotech-3-96x109.png"
                   alt="AltoTech"
-                  style="height: 4.5rem; margin:10px;"
+                  style="height: 4.5rem; margin: 10px"
                 />
               </a>
             </span>
@@ -77,7 +176,9 @@
                   >SOLUTION</a
                 >
                 <div class="dropdown-menu">
-                  <a class="text-secondary text-primary dropdown-item display-7" href="knowyourconsumption.html"
+                  <a
+                    class="text-secondary text-primary dropdown-item display-7"
+                    href="knowyourconsumption.html"
                     >Know Your Consumption</a
                   ><a
                     class="text-secondary text-primary dropdown-item display-7"
@@ -106,11 +207,13 @@
                   class="nav-link link text-secondary text-primary dropdown-toggle display-7"
                   href="#"
                   data-toggle="dropdown-submenu"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   >ABOUT US&nbsp;</a
                 >
                 <div class="dropdown-menu">
-                  <a class="text-secondary text-primary dropdown-item display-7" href="aboutus.html"
+                  <a
+                    class="text-secondary text-primary dropdown-item display-7"
+                    href="aboutus.html#image2-5c"
                     >About AltoTech<br /></a
                   ><a
                     class="text-secondary text-primary dropdown-item display-7"
@@ -152,7 +255,9 @@
               และอาคารได้อย่างอัตโนมัติ
             </p>
             <div class="mbr-section-btn mt-3">
-              <a class="btn btn-secondary display-4" href="startsaving.html">เริ่มลดค่าไฟวันนี้</a>
+              <a class="btn btn-secondary display-4" href="startsaving.html" target="_blank"
+                >เริ่มลดค่าไฟวันนี้</a
+              >
             </div>
           </div>
         </div>
@@ -257,7 +362,7 @@
             <strong>Our Clients</strong>
           </h3>
         </div>
-        <div class="row justify-content-center mt-4">
+        <!-- <div class="row justify-content-center mt-4">
           <div class="col-md-3 card">
             <img src="assets/images/untitled-design-18-240x240.png" alt="" />
           </div>
@@ -273,7 +378,39 @@
           <div class="col-md-3 card">
             <img src="assets/images/-2-240x240.png" alt="" />
           </div>
-        </div>
+        </div> -->
+        <section class="customer-logos slider" style="background-color: transparent">
+          <div class="slide">
+            <img src="assets/images/untitled-design-18-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/untitled-design-17-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/untitled-design-19-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/-4-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/-2-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/untitled-design-18-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/untitled-design-17-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/untitled-design-19-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/-4-240x240.png" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/-2-240x240.png" />
+          </div>
+        </section>
       </div>
     </section>
 
@@ -287,9 +424,6 @@
               <strong>WHAT WE DO</strong>
             </h1>
 
-            <div class="mbr-section-btn mt-3">
-              <a class="btn btn-primary display-4" href="startsaving.html">TRY THIS</a>
-            </div>
             <div class="video-wrapper mt-4">
               <iframe
                 class="mbr-embedded-video"
@@ -299,6 +433,19 @@
                 frameborder="0"
                 allowfullscreen
               ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info1 cid-sltgDKiua6" id="info1-6r">
+      <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(255, 255, 255)"></div>
+      <div class="align-center container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="mbr-section-btn">
+              <a class="btn btn-primary display-4" href="page6.html" target="_blank">ทดลองใช้งาน</a>
             </div>
           </div>
         </div>
@@ -433,7 +580,7 @@
                 </h6>
                 <p class="mbr-text mbr-fonts-style mb-4 display-4">
                   ✔&nbsp;Marketplace สำหรับ applications เพื่อสร้างความสามารถใหม่ ๆ
-                  <br />ให้กับโรงแรมและอาคาร<br />✔&nbsp;เพิ่มศักยภาพการประหยัดพลังงาน
+                  ให้กับโรงแรมและอาคาร<br />✔&nbsp;เพิ่มศักยภาพการประหยัดพลังงาน
                   และการบริหารงานโรงแรม/อาคารได้อย่างมีประสิทธิภาพสูงสุด<br />✔&nbsp;เพิ่มประสิทธิภาพให้โรงแรมหรืออาคารของคุณอัจฉริยะมากขึ้น<br /><br /><br />
                 </p>
               </div>
@@ -461,83 +608,72 @@
     </section>
 
     <section class="clients1 cid-siQxVP0FOF" id="clients1-40">
-      <div class="images-container container">
-        <div class="mbr-section-head"></div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-3 card">
-            <img src="assets/images/1-240x240.png" alt="" />
+      <div class="container" style="margin-top: 15px">
+        <section class="customer-logos slider">
+          <div class="slide">
+            <img src="assets/images/1-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/2-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/2-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/3-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/3-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/4-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/4-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/5-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/5-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/6-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/6-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/7-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/7-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/8-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/8-240x240.png" />
           </div>
-        </div>
+        </section>
       </div>
     </section>
-
-    <section class="clients1 cid-siQNOJKtzM" id="clients1-41">
-      <div class="images-container container">
-        <div class="mbr-section-head"></div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-3 card">
-            <img src="assets/images/9-240x240.png" alt="" />
+    <section class="clients1 cid-siQxVP0FOF" id="clients1-40">
+      <div class="container" style="margin-top: 15px">
+        <section class="customer-logos slider">
+          <div class="slide">
+            <img src="assets/images/9-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/10-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/10-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/11-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/11-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/12-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/12-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/13-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/13-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/14-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/14-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/15-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/15-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/16-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/16-240x240.png" />
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="clients1 cid-siQORfb0Fz" id="clients1-42">
-      <div class="images-container container-fluid">
-        <div class="mbr-section-head"></div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-3 card">
-            <img src="assets/images/17-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/17-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/18-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/18-240x240.png" />
           </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/19-240x240.png" alt="" />
+          <div class="slide">
+            <img src="assets/images/19-240x240.png" />
           </div>
-        </div>
+        </section>
       </div>
     </section>
 
@@ -557,20 +693,20 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10">
-            <div class="carousel slide" id="slpM1dydIs" data-ride="carousel" data-interval="3000">
+            <div class="carousel slide" id="sluMXpS6Wp" data-ride="carousel" data-interval="3000">
               <ol class="carousel-indicators">
-                <li data-slide-to="0" class="active" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="1" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="2" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="3" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="4" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="5" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="6" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="7" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="8" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="9" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="10" data-target="#slpM1dydIs"></li>
-                <li data-slide-to="11" data-target="#slpM1dydIs"></li>
+                <li data-slide-to="0" class="active" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="1" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="2" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="3" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="4" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="5" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="6" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="7" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="8" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="9" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="10" data-target="#sluMXpS6Wp"></li>
+                <li data-slide-to="11" data-target="#sluMXpS6Wp"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item slider-image item active">
@@ -638,7 +774,7 @@
                 class="carousel-control carousel-control-prev"
                 role="button"
                 data-slide="prev"
-                href="#slpM1dydIs"
+                href="#sluMXpS6Wp"
               >
                 <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -647,7 +783,7 @@
                 class="carousel-control carousel-control-next"
                 role="button"
                 data-slide="next"
-                href="#slpM1dydIs"
+                href="#sluMXpS6Wp"
               >
                 <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
@@ -658,7 +794,7 @@
       </div>
     </section>
 
-    <section class="footer6 cid-siR0BprPPx" once="footers" id="footer6-45">
+    <section class="footer6 cid-sltnRTYJuN" once="footers" id="footer6-6s">
       <div class="container">
         <div class="row content mbr-white">
           <div class="col-12 col-md-3 mbr-fonts-style display-7">
@@ -666,24 +802,24 @@
               <strong>NAVIGATION</strong>
             </h5>
             <p class="mbr-text mbr-fonts-style display-7">
-              <a href="index.html" class="text-primary">Home&nbsp;</a><br /><a
+              <a href="index.html" class="text-primary">Home</a><br /><a
                 href="package.html"
                 class="text-primary"
                 >Package</a
-              ><br /><a href="projectref.html" class="text-primary">Project Ref</a><br /><a
+              ><br /><a href="projectref.html" class="text-primary">Project Reference</a><br /><a
                 href="blog.html"
                 class="text-primary"
                 >Blog</a
-              ><a href="blog.html" class="text-primary"><br /></a>
+              >
             </p>
             <br />
             <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 mt-4 display-7">
-              <strong>CONTACT DETAIL</strong><br /><strong>Customer Support</strong
-              ><strong><br /></strong><br />📞<strong>&nbsp;</strong>+66&nbsp;95 161 5011<br />📍&nbsp;
-              &nbsp; 496-502 Amarin Plaza Building, 22/F, Ploen Chit, Lumphinee, Pathumwan Bangkok
-              10330
+              <strong>CONTACT DETAIL</strong><br /><strong>Customer Support</strong>
             </h5>
-            <p class="mbr-text mbr-fonts-style mb-4 display-7"></p>
+            <p class="mbr-text mbr-fonts-style mb-4 display-7">
+              📞 +66 85 973 9292<br />📍&nbsp; &nbsp;719 Mint Tower, Banthat Thong Road, Wang Mai,
+              Pathum Wan District, Bangkok 10330
+            </p>
           </div>
           <div class="col-12 col-md-3 mbr-fonts-style display-7">
             <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
@@ -706,15 +842,24 @@
           <div class="col-12 col-md-6">
             <div class="google-map">
               <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.560108321817!2d100.52133261414289!3d13.745061601154474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2994d0b8d7e6b%3A0x75f3888fdec83b87!2sMint%20Tower!5e0!3m2!1sen!2sth!4v1610104690635!5m2!1sen!2sth"
+                width="600"
+                height="450"
                 frameborder="0"
                 style="border: 0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCZI5F_k6S1k46ujh0SNrapM89f7mJxd30&amp;q=iframe"
                 allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
               ></iframe>
             </div>
           </div>
           <div class="col-md-6">
             <div class="social-list align-left">
+              <div class="soc-item">
+                <a href="https://page.line.me/196hyzas" target="_blank">
+                  <span class="mbr-iconfont mbr-iconfont-social socicon-line socicon"></span>
+                </a>
+              </div>
               <div class="soc-item">
                 <a href="https://www.facebook.com/altotechAI" target="_blank">
                   <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
@@ -726,13 +871,8 @@
                 </a>
               </div>
               <div class="soc-item">
-                <a href="https://lin.ee/zoPq5J6" target="_blank">
-                  <span class="mbr-iconfont mbr-iconfont-social socicon-line socicon"></span>
-                </a>
-              </div>
-              <div class="soc-item">
                 <a href="mailto:sales@altotech.net">
-                  <span class="mbr-iconfont mbr-iconfont-social mobi-mbri-letter mobi-mbri"></span>
+                  <span class="mbr-iconfont mbr-iconfont-social socicon-mail socicon"></span>
                 </a>
               </div>
             </div>
@@ -746,7 +886,7 @@
           </div>
           <div class="col-sm-12 copyright pl-0">
             <p class="mbr-text mbr-fonts-style mbr-white display-7">
-              © Copyright 2020 AltoTech Co.,Ltd - All Rights Reserved
+              © Copyright 2021 AltoTech Co.,Ltd - All Rights Reserved
             </p>
           </div>
         </div>
@@ -764,10 +904,10 @@
         display: flex;
       "
     >
-      <a href="https://mobirise.site/v" style="flex: 1 1; height: 3rem; padding-left: 1rem"></a>
+      <a href="https://mobirise.site/n" style="flex: 1 1; height: 3rem; padding-left: 1rem"></a>
       <p style="flex: 0 0 auto; margin: 0; padding-right: 1rem">
-        Web page was
-        <a href="https://mobirise.site/h" style="color: #aaa">designed with</a> Mobirise
+        Built with Mobirise
+        <a href="https://mobirise.site/j" style="color: #aaa">page</a> software
       </p>
     </section>
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
@@ -783,6 +923,41 @@
     <script src="assets/playervimeo/vimeo_player.js"></script>
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/formoid/formoid.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    rel="stylesheet"
+  /> -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.customer-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
 
     <input
       name="cookieData"

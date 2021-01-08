@@ -546,7 +546,7 @@ nav .mbr-section-btn {
 @media (max-width: 500px) {
   .mbr-arrow-up {
     left: 50%;
-    right: auto;
+    right: 20px;
   }
 }
 
